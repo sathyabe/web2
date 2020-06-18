@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <script src="inventory.js"></script>
+  <style>
+  h1 {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #927000;
+    color: white;
+  }
+  .logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+  </style>
+  
+  <script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+    }
+    </script>
+    
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</head>
+<body>
+  <p style="text-align:right">Translate this page:</p>
+  
+  <div id="google_translate_element" style="text-align:right"></div>
+ 
+   <div>
+  <img class="logo" src="logo.png" alt="Freshkart-logo" class="center" >
+</div>
+
+
+    <h1>=====Freshkart-Inventory=====</h1>
+        <span>Name:</span><input id="prname" placeholder="Enter product name"><br>
+        <span>Description:</span><input id="prdesc" placeholder="Enter product description"><br>
+        <span>Quantity:</span><input id="prqty" placeholder="Enter product quantity"><br>
+        <span>Price:</span><input id="prprice" placeholder="Enter product Price"><br>
+        <input type="file" id="files" onchange="getImgUrl()"><br>
+        <input type="hidden" id="custId" name="custId" >
+        <!--<button id="adbtn1" onclick="view()">SHOW</button>-->
+        
+        
+<button id="addbtn" onclick="addtoCart()" >Add</button>
+<hr>
+|
+
+<div id="prod"></div>
+<script>window.onload = function() {show()};</script>
+
+</body>
+</html>
+ 
+ 
